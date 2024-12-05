@@ -1,67 +1,84 @@
 /* Global settings */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Georgia', serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f7f1; /* Couleur beige pour l'arrière-plan */
+    color: #4b4b4b; /* Gris foncé pour le texte */
 }
 
-/* Container for the CV content */
+/* Conteneur principal du CV */
 .container {
     width: 80%;
-    margin: 0 auto;
-    padding: 30px;
+    margin: 30px auto;
+    padding: 20px;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #f0d2a7; /* Une touche de couleur dorée pour rappeler l'univers de la cuisine */
 }
 
-/* Header Section */
+/* Header */
 header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    color: #333;
+    font-size: 3em;
+    color: #c97c4c; /* Un orange chaleureux pour le titre */
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
 }
 
 header p {
-    font-size: 1.2em;
-    color: #555;
+    font-size: 1.3em;
+    color: #6a4e23; /* Gris-brun pour un aspect naturel et apaisant */
+    font-style: italic;
 }
 
 /* Section Title */
 section h2 {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px;
+    background-color: #d88f5d; /* Une couleur de fond chaude, comme le caramel ou le miel */
+    color: #fff;
+    padding: 12px;
     margin: 0;
-    font-size: 1.5em;
-    border-radius: 5px;
+    font-size: 1.8em;
+    border-radius: 8px;
+    font-family: 'Georgia', serif;
 }
 
-/* List styling for each section */
+/* List styling for sections */
 section ul {
     list-style-type: none;
     padding-left: 20px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 section ul li {
-    margin-bottom: 8px;
-    font-size: 1.1em;
-    color: #333;
+    margin-bottom: 12px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    padding-left: 25px;
+    position: relative;
 }
 
-/* Footer Section */
+/* Add a decorative food-related icon before each list item */
+ul li::before {
+    content: "🍽️"; /* Icône de couverts pour rappeler l'univers culinaire */
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 40px;
     font-size: 1.2em;
-    color: #777;
+    color: #6a4e23; /* Gris-brun pour garder l'unité du design */
+    font-style: italic;
 }
 
 footer p {
@@ -70,25 +87,25 @@ footer p {
 
 /* Styling for sections */
 section {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 /* Add spacing between sections */
 section + section {
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
-/* Styling for the list items to make them more readable */
-ul li {
-    padding-left: 10px;
-    position: relative;
-}
-
-ul li::before {
-    content: "•";
-    color: #007BFF;
+/* Add decorative elements in the background */
+.container::before {
+    content: "";
     position: absolute;
-    left: 0;
-    top: 0;
+    top: 50px;
+    left: 50px;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.example.com/kitchen-pattern.png'); /* Image de fond avec des éléments de cuisine (tasse, fouet, etc.) */
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    z-index: -1;
 }
-
