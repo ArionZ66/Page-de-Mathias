@@ -56,6 +56,22 @@ body {
             margin-top: 10px;
         }
 
+/* Conteneur pour chaque section avec image et texte */
+.content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Style de l'image */
+.image img {
+    max-width: 250px; /* Taille de l'image limitée */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile autour de l'image */
+
+
+    
 /* Container principal */
 .container {
     max-width: 1200px;
